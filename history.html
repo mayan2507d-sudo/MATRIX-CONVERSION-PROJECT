@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>History of Units - Matrix Conversion</title>
+
+<!-- Bootstrap CSS & Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<style>
+/* Navbar Styling */
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.nav-link::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:0%;
+  height:2px;
+  background:#00d4ff;
+  transition:0.3s;
+}
+.nav-link:hover::after{width:100%;}
+.nav-link:hover { color: #00d4ff; background: rgba(0, 212, 255, 0.1); }
+.nav-link.active { color: #00d4ff !important; background: rgba(0,212,255,0.2); font-weight: 600; }
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 { animation: fadeInDown 1s ease-in-out; }
+.hero p { animation: fadeInUp 1.5s ease-in-out; }
+
+@keyframes fadeInDown {
+  0% {opacity:0; transform: translateY(-50px);}
+  100% {opacity:1; transform: translateY(0);}
+}
+@keyframes fadeInUp {
+  0% {opacity:0; transform: translateY(50px);}
+  100% {opacity:1; transform: translateY(0);}
+}
+
+/* Images */
+.img-caption {
+  font-size: 0.9em;
+  color: #6c757d;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Footer */
+footer {
+  background: black;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+footer a { color:#fff; text-decoration:none;}
+footer a:hover { color:#00d4ff; text-decoration:underline; }
+h2 { margin-top:30px; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero { padding: 60px 15px; }
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
+  .img-caption { font-size: 0.8em; }
+}
+</style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">MATRIX CONVERSION</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html"><b><i>HOME</i></b></a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html"><b><i>ABOUT US</i></b></a></li>
+        <li class="nav-item"><a class="nav-link active" href="history.html"><b><i>HISTORY</i></b></a></li>
+        <li class="nav-item"><a class="nav-link" href="chart.html"><b><i>CHARTS</i></b></a></li>
+        <li class="nav-item"><a class="nav-link" href="articles.html"><b><i>ARTICLES</i></b></a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html"><b><i>FAQs</i></b></a></li>
+
+        <!-- Conversions -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><b><i>CONVERSIONS</i></b></a>
+          <ul class="dropdown-menu dropdown-menu-dark shadow">
+            <li><a class="dropdown-item" href="mass.html">Mass</a></li>
+            <li><a class="dropdown-item" href="length.html">Length</a></li>
+            <li><a class="dropdown-item" href="volume.html">Volume</a></li>
+            <li><a class="dropdown-item" href="area.html">Area</a></li>
+            <li><a class="dropdown-item" href="temperature.html">Temperature</a></li>
+            <li><a class="dropdown-item" href="currency.html">Currency</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1 class="display-5 fw-bold">History of Measurement Units</h1>
+    <p class="lead mt-3">Explore the evolution from ancient systems to modern metric and imperial units.</p>
+  </div>
+  <svg viewBox="0 0 1440 150" style="display:block;">
+    <path fill="#f8f9fa" d="M0,64L80,80C160,96,320,128,480,138.7C640,149,800,139,960,133.3C1120,128,1280,128,1360,128L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+  </svg>
+</section>
+
+<div class="container my-5">
+
+<h3 class="mt-4 mb-3">Different Systems of Units</h3>
+<p>
+Historically, many different systems of units have been used, where a system of units is defined as a collection of units of measurement with rules that relate them to each other. A unit of measurement is a defined magnitude of a quantity that it used as a standard for measurement for the same kind of quantity, such as measurements of length, weight, and volume. In the past, many systems of measurement were defined on a local level, and could be based on factors as arbitrary as the length of a king's thumb. While this may work on a local level, when considering trade, as well as science, having systems of units based on units that others may not be able to relate to or understand makes interaction difficult. As such, the development of more universal and consistent systems developed over time. Today, some of the systems of units in use include the metric system, the imperial system, and the United States customary units.
+</p>
+
+<h2 class="mb-3">History of the Pound</h2>
+<p>
+In the eighth and ninth centuries of the Common Era (CE), Arab civilization flourished in the Middle East and Spain. The Arabs used coins as a measurement of units of weight since a minted coin could not easily be cut or shaved to reduce its weight, and thus provided a measurable standard. They used a coin called a silver dirhem as a basic measure of weight, which had a weight roughly equivalent to 45 fully grown grains of barley. Ten dirhems comprised a Wukryeh, which was translated into Latin as an "uncia" – the origin of the word "ounce."
+
+Over time, trade spread from the Mediterranean area to Europe, including the northern German City States. As a result, a pound, 16 ounces of silver, or 7200 grains, became a commonly used measure in many regions.
+
+While England also adopted this measure, a shortage of silver caused King Offa to reduce the measurement of the pound to 5400 grains in order to use smaller coins. Eventually, when William the Conqueror became King of England, he retained the 5400-grain pound for minting coins, but reverted to the 7200-grain pound for other purposes.
+
+Though many countries used the pound from that point onward, including England (the British pound sterling, or GBP was equal to one pound-weight of silver in King Offa's time), the avoirdupois weight system was adopted during the reign of Queen Elizabeth in the 16th century. It was a system based on the weight of coal, and its name was derived from the French phrase "avoir de pois" (goods of weight or property). The avoirdupois was equivalent to 7,000 grains, 256 drams of 27.344 grains each, or 16 ounces of 437 ½ grains each. Since 1959, the avoirdupois pound has been officially defined in most English-speaking countries as 0.45359237 kilograms.
+
+
+</p>
+
+<h3 class="mt-4 mb-3">Brief History of the Metric System</h3>
+<p>
+In 1668, John Wilkins proposed a decimal system in which length, area, volume, and mass were linked to each other based on a pendulum that had a beat of one second as a base unit of length. In 1670, Gabriel Mouton proposed a decimal system that was instead based on the circumference of the earth, an idea supported by other prominent scientists of the time such as Jean Picard and Christiaan Huygens, but that did not take hold for approximately another 100 years. By the mid-eighteenth century, it was clear to nations who traded and exchanged scientific ideas that standardization of weights and measures was necessary. In 1790, Charles Maurice de Talleyrand-Perigord, the Prince of Talleyrand, approached the British (represented by John Riggs-Miller) and the Americans (represented by Thomas Jefferson) with proposals to define a common standard of length based on the length of a pendulum. In that same year, Thomas Jefferson, presented the "Plan for Establishing Uniformity in the Coinage, Weights, and Measures of the United States," which advocated for a decimal system in which units were related to each other by powers of ten. A committee that was formed in France comprised of some of the most prominent scientists of the day came to a similar conclusion, and also proposed a decimal system for all weights and measures. Although Congress considered Jefferson's report, it was not adopted. In Great Britain, John Riggs-Miller lost his British Parliamentary seat in the 1790 election. As such, the measurement system was only implemented in France, and in 1795, the metric system was formally defined in French law. It was not until 1799, however, that the metric system was officially adopted in France, though it was still not universally observed across the country. The spread of the metric system did not occur quickly, and areas that were annexed by France during Napoleon's reign were the first to adopt the metric system. By 1875, two thirds of the European population, and nearly half the world's population had adopted the metric system. By 1920, the percentage of the world's population using the imperial system or the US customary system was ~22%, with 25% using mainly the metric system, and 53% using neither.
+<!-- Content unchanged -->
+</p>
+
+</div>
+
+<!-- Images Section -->
+<div class="container my-5">
+  <div class="row mb-4">
+    <div class="col-md-4 mb-3">
+      <img src="https://vitrek.com/wp-content/uploads/2023/05/measurements.webp" class="img-fluid rounded">
+      <p class="img-caption">Ancient weights and measures</p>
+    </div>
+    <div class="col-md-4 mb-3">
+      <img src="https://www.megaministore.com/wp-content/uploads/2010/06/antique-sextant-1024x768.jpg" class="img-fluid rounded">
+      <p class="img-caption">Early navigation instruments</p>
+    </div>
+    <div class="col-md-4 mb-3">
+      <img src="https://msc-conf.com/wp-content/uploads/2016/06/EgyptianMeasurementDevicesNoBorder.jpg" class="img-fluid rounded">
+      <p class="img-caption">Egyptian cubit rods</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-auto">
+  <p class="mb-0"><a href="about.html">About Us</a> | © 2025 Matrix Conversion Website | <a href="index.html">Home</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
